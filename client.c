@@ -6,7 +6,7 @@
 /*   By: amantara <amantara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 17:39:52 by amantara          #+#    #+#             */
-/*   Updated: 2022/03/06 18:13:17 by amantara         ###   ########.fr       */
+/*   Updated: 2022/03/11 18:21:23 by amantara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,11 +98,6 @@ int	main(int argc, char **argv)
 	if (argc == 3 && ft_strlen > 0 && validar_pid(argv[1]) == 1)
 		send_char(ft_atoi(argv[1]), ft_to_bit(argv[2], 0, 0));
 	else
-	{
-		if (validar_pid(argv[1]) == 1)
-			show_error (1);
-		else
-			show_error (2);
-	}
+		show_error (1);
 	return (0);
 }

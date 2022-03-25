@@ -6,7 +6,7 @@
 /*   By: amantara <amantara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 17:38:06 by amantara          #+#    #+#             */
-/*   Updated: 2022/03/06 17:39:04 by amantara         ###   ########.fr       */
+/*   Updated: 2022/03/08 18:45:58 by amantara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,29 +64,6 @@ void	binary_to_decimal(char *str)
 	}
 	write(1, &c, 1);
 }
-
-// void recibir (int sig){
-// 	static char	*bits;
-// 	static int	bitcount;
-
-// 	bitcount++;
-// 	if(!bits)
-// 	{
-// 		bits = ft_strdup("");
-// 		bitcount = 1;
-// 	}
-// 	if (sig == SIGUSR1)
-// 		ft_strjoinC(bits, '1');
-// 	else if (sig == SIGUSR2)
-// 		ft_strjoinC(bits, '0');
-// 	if (bitcount == 8)
-// 	{
-
-// 		binary_to_decimal(bits);
-// 		free(bits);
-// 		bits = NULL;
-// 	}
-// }
 
 // reads every bit and appends it to bits
 // if its a 8 bit it prints the char to the console
